@@ -1,0 +1,5 @@
+D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher.Tests\bin\Debug\SaleCycle.Svc.Dispatcher.Tests.dll
+D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher.Tests\bin\Debug\SaleCycle.Svc.Dispatcher.Tests.pdb
+D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher.Tests\obj\Debug\SaleCycle.Svc.Dispatcher.Tests.csprojResolveAssemblyReference.cache
+D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher.Tests\obj\Debug\SaleCycle.Svc.Dispatcher.Tests.dll
+D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher.Tests\obj\Debug\SaleCycle.Svc.Dispatcher.Tests.pdb
