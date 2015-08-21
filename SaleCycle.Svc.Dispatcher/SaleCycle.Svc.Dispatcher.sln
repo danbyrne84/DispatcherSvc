@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleCycle.Svc.Dispatcher.Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleCycle.Dispatchers.Sms.Dynmark", "SaleCycle.Dispatchers.Sms.Dynmark\SaleCycle.Dispatchers.Sms.Dynmark.csproj", "{FC037DAE-1E7D-4005-A1D7-13FEF75BD495}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dispatchers", "Dispatchers", "{27DAC3F7-8AFE-4701-B3F4-DA7CFFBBA6E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sms", "Sms", "{33FF9EFF-39FE-4B8B-88D8-C1967217DE2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleCycle.Svc.Dispatcher.Contract", "SaleCycle.Svc.Dispatcher.Contract\SaleCycle.Svc.Dispatcher.Contract.csproj", "{09E1AA25-EC5A-4F6B-91A7-88400C2F4082}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,8 +31,16 @@ Global
 		{FC037DAE-1E7D-4005-A1D7-13FEF75BD495}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC037DAE-1E7D-4005-A1D7-13FEF75BD495}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC037DAE-1E7D-4005-A1D7-13FEF75BD495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09E1AA25-EC5A-4F6B-91A7-88400C2F4082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09E1AA25-EC5A-4F6B-91A7-88400C2F4082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09E1AA25-EC5A-4F6B-91A7-88400C2F4082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09E1AA25-EC5A-4F6B-91A7-88400C2F4082}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{33FF9EFF-39FE-4B8B-88D8-C1967217DE2A} = {27DAC3F7-8AFE-4701-B3F4-DA7CFFBBA6E6}
+		{FC037DAE-1E7D-4005-A1D7-13FEF75BD495} = {33FF9EFF-39FE-4B8B-88D8-C1967217DE2A}
 	EndGlobalSection
 EndGlobal

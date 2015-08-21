@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using SaleCycle.Svc.Dispatcher.Models;
 
-namespace SaleCycle.Svc.Dispatcher.Dispatchers
+namespace SaleCycle.Svc.Dispatcher.Contract
 {
-    public interface IDispatcher<T> where T : class
+    public interface IDispatcher<T> where T : ISmsDispatch
     {
         IEnumerable<DispatchResult<T>> Dispatch(IEnumerable<T> dispatches);
         DispatchResult<T> Dispatch(T dispatch);

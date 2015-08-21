@@ -1,3 +1,4 @@
+D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\obj\Debug\SaleCycle.Svc.Dispatcher.csprojResolveAssemblyReference.cache
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\NLog.config
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\SaleCycle.Svc.Dispatcher.exe.config
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\SaleCycle.Svc.Dispatcher.exe
@@ -10,8 +11,11 @@ D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Deb
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\Newtonsoft.Json.dll
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\NLog.dll
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\Owin.dll
+D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\Pysco68.Owin.Logging.NLogAdapter.dll
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\Quartz.dll
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\RestSharp.dll
+D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\SaleCycle.Dispatchers.Sms.Dynmark.dll
+D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\SaleCycle.Svc.Dispatcher.Contract.dll
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\SimpleInjector.dll
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\SimpleInjector.Extensions.ExecutionContextScoping.dll
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\SimpleInjector.Integration.WebApi.dll
@@ -24,6 +28,8 @@ D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Deb
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\Topshelf.dll
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\Topshelf.SimpleInjector.dll
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\Topshelf.SimpleInjector.QuickStart.exe
+D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\SaleCycle.Dispatchers.Sms.Dynmark.pdb
+D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\SaleCycle.Svc.Dispatcher.Contract.pdb
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\Common.Logging.pdb
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\Common.Logging.xml
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\Common.Logging.Core.pdb
@@ -33,6 +39,7 @@ D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Deb
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\Microsoft.Owin.Hosting.xml
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\Newtonsoft.Json.xml
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\NLog.xml
+D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\Pysco68.Owin.Logging.NLogAdapter.pdb
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\Quartz.pdb
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\Quartz.xml
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\RestSharp.xml
@@ -45,4 +52,3 @@ D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Deb
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\bin\Debug\System.Web.Http.Owin.xml
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\obj\Debug\SaleCycle.Svc.Dispatcher.exe
 D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\obj\Debug\SaleCycle.Svc.Dispatcher.pdb
-D:\Source\SaleCycleApi\SaleCycle.Svc.Dispatcher\SaleCycle.Svc.Dispatcher\obj\Debug\SaleCycle.Svc.Dispatcher.csprojResolveAssemblyReference.cache
