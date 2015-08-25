@@ -92,7 +92,8 @@ namespace SaleCycle.Svc.Dispatcher.Service
                         PollingUrl = Settings.PollingUrl,
                         ClientId = config.ClientId.ToString(),
                         PollingIntervalMinutes = config.PollingIntervalMinutes,
-                        Provider = config.Provider
+                        Provider = config.Provider,
+                        DispatcherSettings = config.Settings
                     });
                 });
             }

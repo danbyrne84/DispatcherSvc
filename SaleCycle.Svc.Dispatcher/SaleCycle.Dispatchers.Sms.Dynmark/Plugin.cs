@@ -12,13 +12,17 @@ namespace SaleCycle.Dispatchers.Sms.Dynmark
     public class Plugin : ISmsDispatcher
     {
         private UriBuilder Uri { get; set; }
+        private Dictionary<string, object> Settings { get; set; }
 
-        public Plugin()
+        public Plugin(Dictionary<string, object> settings)
         {
-            Uri = new UriBuilder("https://services.dynmark.com/HttpServices/");
+            Settings = settings;
+
+            Uri = new UriBuilder(Settings["Url"].ToString());
             Uri.Path += "SendMessage.ashx";
-            Uri.Query = AppendQueryValue(Uri.Query, "user", "secret");
-            Uri.Query = AppendQueryValue(Uri.Query, "password", "secret");
+
+            Uri.Query = AppendQueryValue(Uri.Query, "user", Settings["User"].ToString());
+            Uri.Query = AppendQueryValue(Uri.Query, "password", Settings["Password"].ToString());
         }
 
         public IEnumerable<DispatchResult<ISmsDispatch>> Dispatch(IEnumerable<ISmsDispatch> dispatches)
@@ -35,9 +39,6 @@ namespace SaleCycle.Dispatchers.Sms.Dynmark
 
         public DispatchResult<ISmsDispatch> Dispatch(ISmsDispatch dispatch)
         {
-            //Uri.Query = AppendQueryValue(Uri.Query, "to", "447534470501"); // !!Michael Batty's Mobile number
-
-            HttpStatusCode lastHttpStatus = HttpStatusCode.Accepted; // Add the required method page name.
             string returnValue = null;
 
             Uri.Query = AppendQueryValue(Uri.Query, "to", dispatch.To);
@@ -52,22 +53,22 @@ namespace SaleCycle.Dispatchers.Sms.Dynmark
             try
             {
                 var response = (HttpWebResponse)request.GetResponse();
-                lastHttpStatus = response.StatusCode; // Get the HTTP return code. 
 
-                // Read the XML from the response. 
+                /**
+                // Read the XML from the response - don't bother doing this if successful
                 using (var sr = new StreamReader(response.GetResponseStream(), Encoding.UTF8))
                 {
                     returnValue = sr.ReadToEnd();
                 }
+                **/
 
-                return new DispatchResult<ISmsDispatch> { Dispatched = true, Processed = true, Reference = Guid.NewGuid() };
+                return new DispatchResult<ISmsDispatch> { Dispatched = true, Processed = true, Error = false, Reference = Guid.NewGuid() };
             }
             catch (WebException ex)
             {
                 return DispatchResultFromWebEx(ex);
             }
         }
-
 
         private DispatchResult<ISmsDispatch> DispatchResultFromWebEx(WebException ex)
         {
@@ -100,22 +101,19 @@ namespace SaleCycle.Dispatchers.Sms.Dynmark
 
         private static string AppendQueryValue(string currentQueryString, string name, string value)
         {
-            var returnQueryString = currentQueryString; // Add new name value pair. 
+            var returnQueryString = currentQueryString;
+            
             if (!string.IsNullOrEmpty(currentQueryString))
             {
-                // Trim any leading ?'s 
                 if (returnQueryString.StartsWith("?"))
                 {
                     returnQueryString = returnQueryString.Substring(1);
-                } // Append Query String value. 
-                returnQueryString += string.Format("&{0}={1}", HttpUtility.UrlEncode(name),
-                    HttpUtility.UrlEncode(value));
+                }
+                returnQueryString += string.Format("&{0}={1}", HttpUtility.UrlEncode(name), HttpUtility.UrlEncode(value));
             }
             else
             {
-                // First Query String value. 
-                returnQueryString = string.Format("{0}={1}", HttpUtility.UrlEncode(name),
-                    HttpUtility.UrlEncode(value));
+                returnQueryString = string.Format("{0}={1}", HttpUtility.UrlEncode(name), HttpUtility.UrlEncode(value));
             }
             return returnQueryString;
         }

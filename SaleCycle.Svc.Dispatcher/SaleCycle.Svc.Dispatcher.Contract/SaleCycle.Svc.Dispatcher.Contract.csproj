@@ -60,6 +60,7 @@
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="IDispatch.cs" />
     <Compile Include="IDispatcher.cs" />
+    <Compile Include="IDispatcherSettings.cs" />
     <Compile Include="ISmsDispatch.cs" />
     <Compile Include="ISmsDispatcher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

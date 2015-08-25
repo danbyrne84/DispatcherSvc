@@ -1,4 +1,5 @@
-﻿using SaleCycle.Svc.Dispatcher.Contract.Extensions;
+﻿using System.Collections.Generic;
+using SaleCycle.Svc.Dispatcher.Contract.Extensions;
 
 namespace SaleCycle.Svc.Dispatcher.Contract
 {
@@ -9,10 +10,12 @@ namespace SaleCycle.Svc.Dispatcher.Contract
         public string Text { get; set; }
         public string Provider { get; set; }
 
+        public Dictionary<string, object> Settings { get; set; }
+
         public bool IsValid()
         {
             return (To.IsNotNullOrEmpty() && From.IsNotNullOrEmpty() && Text.IsNotNullOrEmpty() &&
-                   Provider.IsNotNullOrEmpty());
+                   Provider.IsNotNullOrEmpty() && Settings != null);
         }
     }
 }

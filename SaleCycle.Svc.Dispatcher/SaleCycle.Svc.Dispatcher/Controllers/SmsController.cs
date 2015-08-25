@@ -21,7 +21,7 @@ namespace SaleCycle.Svc.Dispatcher.Controllers
                 }
 
                 // retrieve dispatcher
-                var dispatcher = SmsDispatcherFactory.GetDispatcherByName(dispatch.Provider);
+                var dispatcher = SmsDispatcherFactory.GetDispatcherByName(dispatch.Provider, dispatch.Settings);
                 if (dispatcher == null)
                 {
                     return new HttpResponseMessage(HttpStatusCode.BadRequest);

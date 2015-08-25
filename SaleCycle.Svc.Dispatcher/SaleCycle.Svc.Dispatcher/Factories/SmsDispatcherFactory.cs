@@ -15,7 +15,7 @@ namespace SaleCycle.Svc.Dispatcher.Factories
         private static readonly ILogger Logger = Program.Container.GetInstance<ILogger>();
 
         // retrieve registered dispatcher by name
-        public static ISmsDispatcher GetDispatcherByName(string dispatcherName)
+        public static ISmsDispatcher GetDispatcherByName(string dispatcherName, Dictionary<string, object> settings)
         {
             ISmsDispatcher instance = null;
             try
@@ -27,11 +27,11 @@ namespace SaleCycle.Svc.Dispatcher.Factories
                     return null;
                 }
 
-                instance = (ISmsDispatcher) Activator.CreateInstance(dispatcherType);
+                instance = (ISmsDispatcher) Activator.CreateInstance(dispatcherType, new object[] { settings });
             }
-            catch
+            catch(Exception ex)
             {
-                Logger.Error("Unable to create an instance of {0}".Fmt(dispatcherName));
+                Logger.Error("Unable to create an instance of {0} - {1}".Fmt(dispatcherName, ex));
             }
             return instance;
         }
